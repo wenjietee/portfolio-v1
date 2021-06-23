@@ -12,7 +12,7 @@
 }
 a:hover,
 a > *:hover {
-	color: #cb29ec !important;
+	color: #d557ee !important;
 }
 /* !Hero section layout */
 .landing {
@@ -70,6 +70,10 @@ a > *:hover {
 }
 .about-col {
 	text-align: center;
+}
+.about-desc {
+	text-align: left;
+	font-size: 1.1em;
 }
 /* !About skills */
 .skills-flex {
