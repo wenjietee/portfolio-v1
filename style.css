@@ -1,59 +1,97 @@
-/* Fonts */
-
-/* Main */
+/* !Main */
 /* div {
 	border: 1px solid red;
 } */
-body {
-	background-color: #f5f5f5;
-}
-.about,
-.landing,
-.projects,
-.contact {
-	width: 70%;
-}
-.about,
-.landing {
-	height: 50em;
-}
 
-.row {
-	margin-top: 2em;
+.header {
+	text-align: center;
+	padding-top: 2em;
+}
+.base {
+	height: 100vh;
+}
+a:hover,
+a > *:hover {
+	color: #d557ee !important;
+}
+/* !Hero section layout */
+.landing {
+	background: #32303b;
+}
+.hero-content {
+	padding-top: 30vh;
+	padding-left: 5vw;
+}
+/* !Hero section fonts */
+.my-name,
+.change-text {
+	font-weight: 500;
+}
+.my-name {
+	color: #7fffd4;
+}
+.hero-text,
+.nav-link,
+.fa-bars {
+	color: #ebebeb;
 }
 
 /* Nav */
-nav {
-	background: none;
-	margin-top: 3em;
+#navbar {
+	margin-left: -0.5em;
+	width: 100%;
 }
-li > a {
-	color: black !important;
-	font-size: 1.5em;
-	margin-right: 1em;
+.navbar-toggler:focus {
+	outline: none;
+	box-shadow: none;
+}
+.navbar-fixed {
+	top: 0;
+	z-index: 100;
+	width: 200%;
+	position: fixed;
+	margin-left: -20vw;
+	padding: 0 20vw;
+
+	background: #32303b;
+}
+.fa-bars {
+	font-size: 1.3em;
 }
 
-/*  Landing */
-.landing {
-	margin-top: 12em;
-}
-.job {
-	color: #7233c4;
-}
-/* About */
-
+/* !About layout */
 .profile-pic {
 	width: 20em;
 	height: 20em;
 	object-fit: cover;
 	border-radius: 50%;
-	box-shadow: 10px 10px 20px rgba(179, 179, 179, 0.973);
+	padding: 2em;
+	/* box-shadow: 10px 10px 20px rgba(179, 179, 179, 0.973); */
 }
-.desc {
-	margin-top: 3em;
+.about-col {
+	text-align: center;
 }
-/* Projects */
+.about-desc {
+	text-align: left;
+	font-size: 1.1em;
+}
+/* !About skills */
+.skills-flex {
+	display: flex;
+	justify-content: space-evenly;
+	margin: auto;
+	width: 30vw;
+}
 
+.skills-flex > div {
+	font-size: 3em;
+	padding: 5px;
+}
+
+/* !Projects */
+.projects {
+	margin-bottom: 5em;
+}
 .card {
 	padding: 2em;
 	margin-top: 2em;
@@ -70,19 +108,26 @@ li > a {
 	margin-top: 1em;
 }
 
-.fab,
-.fas {
+.p-icon {
 	margin-right: 0.5em;
 	font-size: 2em;
 	color: #5a5a5a;
 }
 
-/* Contact */
-.contact {
-	margin-top: 5em;
-	height: 20em;
+/* !Footer */
+footer {
+	height: 23vh;
+	background: #32303b;
+	color: #ebebeb;
 	text-align: center;
+	padding: 3em;
 }
-.contact-icons > li {
+.footer-icons > li {
 	display: inline;
+	margin-right: 2em;
+}
+.c-icon {
+	padding-bottom: 0.5em;
+	font-size: 3em;
+	color: #eeeeee;
 }
